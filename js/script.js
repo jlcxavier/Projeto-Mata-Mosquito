@@ -24,7 +24,6 @@ function adjustWindowSize() {
 	altura = window.innerHeight
 	largura = window.innerWidth
 
-	console.log(largura, altura)
 }
 
 adjustWindowSize()
@@ -104,5 +103,14 @@ function randomSide() {
 
  		case 1:
  			return 'ladoB'
- }
+ 	}
+}
+
+let clique = 0
+
+function contador() {
+
+	clique += 1
+
+	document.getElementById('clique').innerHTML = parseInt(clique)
 }
